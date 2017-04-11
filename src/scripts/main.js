@@ -1,5 +1,8 @@
 // Require Node modules in the browser thanks to Browserify: http://browserify.org
+
+
 var bespoke = require('bespoke'),
+  gsap = require('gsap')
   cube = require('bespoke-theme-cube'),
   nebula = require('bespoke-theme-nebula'),
   keys = require('bespoke-keys'),
@@ -30,3 +33,5 @@ bespoke.from('article', [
 // debowerify: https://github.com/eugeneware/debowerify
 require('prism');
 
+var tl = new gsap.TimelineMax({repeat:-1, repeatDelay:1, yoyo:true});
+tl.staggerTo("h5", 0.2, {className:"+=superShadow", top:"-=9px", ease:Power1.easeIn}, "0.2", "start")

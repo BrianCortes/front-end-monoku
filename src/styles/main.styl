@@ -6,3 +6,57 @@
 
 @import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
+
+.bespoke-parent
+  background-image: linear-gradient(-47deg, #DA0071 0%, #1B00C5 100%)
+  position: fixed
+
+.bespoke-parent::before
+  background-image: url("http://www.monoku.com/assets/images/image_back.png")
+  background-position: center
+  background-size: cover
+  bottom: 0
+  content: ""
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  z-index: -1
+
+.glitch
+  color: white
+  font-size: 100px
+  position: relative
+  width: 400px
+  margin: 0 auto
+
+h5
+  font-size:100px
+  position:relative
+  font-family: 'Source Sans Pro', Arial, sans-serif
+
+/*
+text-shadow originated from: http://codepen.io/zitrusfrisch
+*/
+.superShadow
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+                   0 2px 0 hsl(174,5%,75%),
+                   0 3px 0 hsl(174,5%,70%),
+                   0 4px 0 hsl(174,5%,66%),
+                   0 5px 0 hsl(174,5%,64%),
+                   0 6px 0 hsl(174,5%,62%),
+                   0 7px 0 hsl(174,5%,61%),
+                   0 8px 0 hsl(174,5%,60%),
+
+                   0 0 5px rgba(0,0,0,.05),
+                  0 1px 3px rgba(0,0,0,.2),
+                  0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.2),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.3);
+
+
+strong
+  font-size:200px
+
+
