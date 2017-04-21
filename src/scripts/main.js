@@ -92,18 +92,17 @@ bc.from(panel1, 1, {autoAlpha:0})
 
 document.addEventListener("keydown", keyDownListener);
 function keyDownListener(e) {
-  debugger
   var key = e.key;
   var hash = window.location.hash
   if (key === 'ArrowLeft'){
-    if (hash === '#4') {
-      controlE = document.querySelector(".control")
-      gsap.TweenLite.to(controlE, 2, {left:"542px", backgroundColor:"black", borderBottomColor:"#90e500", color:"white"});
+    if (hash === '#21') {
+      var controlE = document.querySelector(".control")
+      gsap.TweenLite.to(controlE, 3, {top:"44%", borderBottomColor:"#90e500", color:"white", backgroundColor:'black'});
     }
   } else if (key === 'ArrowRight') {
-    if (hash === '#4') {
-      controlE = document.querySelector(".control")
-      gsap.TweenLite.to(controlE, 2, {left:"20px", borderBottomColor:"#90e500", color:"white"});
+    if (hash === '#21') {
+      var controlE = document.querySelector(".control")
+      gsap.TweenLite.to(controlE, 3, {top:"44%", borderBottomColor:"#90e500", color:"white", backgroundColor:'black'});
     }
   }
 }
